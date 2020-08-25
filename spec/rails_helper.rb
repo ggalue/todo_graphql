@@ -38,7 +38,7 @@ RSpec.configure do |config|
   # instead of true.
   config.before(:suite) do
     DatabaseCleaner.clean_with(:truncation)
-   DatabaseCleaner.strategy = :transaction
+    DatabaseCleaner.strategy = :transaction
  end
 
  # start the transaction strategy as examples are run

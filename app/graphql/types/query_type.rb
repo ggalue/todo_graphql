@@ -3,6 +3,9 @@ module Types
     root_type.name = 'Query'
     root_type.description = 'The query root'
     root_type.interfaces = []
-    root_type.fields = Util::FieldCombiner.combine([])
+    
+    root_type.fields = Util::FieldCombiner.combine([
+  		QueryTypes::TodoListQueryType
+		])
   end
 end
